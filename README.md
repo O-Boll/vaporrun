@@ -1,3 +1,5 @@
+<img align="right" width="100%" src="https://raw.githubusercontent.com/O-Boll/vaporrun/master/media/screenshot_vaporrun.png">
+
 # VaporRun
 
 An OutRun-like driving game in an early stage of development.
