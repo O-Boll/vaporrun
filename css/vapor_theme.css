@@ -1,0 +1,31 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(#cc66ff, #000066);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#content {
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#gsurf {
+    background: #333333;
+    border: 3px solid #00ff99;
+}
+
+.texture {
+    width: 0;
+    height: 0;
+}

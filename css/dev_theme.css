@@ -1,0 +1,29 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    background: #333333;
+    margin: 0;
+}
+
+#content {
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#gsurf {
+    background: #cccccc;
+    border: 1px solid #333333;
+}
+
+.texture {
+    width: 0;
+    height: 0;
+}

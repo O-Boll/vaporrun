@@ -1,0 +1,25 @@
+﻿<!doctype html>
+
+<!--
+LICENSE GOES HERE
+-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/dev_theme.css">
+        <script src="lib/glMatrix/gl-matrix-min.js"></script>
+        <script src="src/glsl/vertex_shader.glsl.js"></script>
+        <script src="src/glsl/fragment_shader.glsl.js"></script>
+        <script src="src/draw.js"></script>
+        <title>ＶＡＰＯＲＲＵＮ</title>
+    </head>
+    <body onload="initWebGL();clearGSurf();demo();">
+        <div id="content">
+            <canvas id="gsurf" width="800" height="600">
+            </canvas>
+        </div>
+        <img class="texture" id="road_texture" src="textures/road_texture.png">
+        <img class="texture" id="grass_texture" src="textures/grass_texture.png">
+	</body>
+</html>
