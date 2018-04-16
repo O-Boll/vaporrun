@@ -1,16 +1,20 @@
-const vertexShaderString =
-[
-    'precision mediump float;',
-    'attribute vec3 vertexPosition;',
-    'attribute vec2 vertexTextureCoordinates;',
-    'varying vec2 fragmentTextureCoordinates;',
-    'uniform mat4 mWorld;',
-    'uniform mat4 mView;',
-    'uniform mat4 mProj;',
-    '',
-    'void main()',
-    '{',
-    '    fragmentTextureCoordinates = vertexTextureCoordinates;',
-    '    gl_Position = mProj * mView * mWorld * vec4(vertexPosition, 1.0);',
-    '}'
-].join('\n');
+vr.vertexShaderSource =
+`
+precision mediump float;
+attribute vec3 vertexCoordinates;
+attribute vec2 textureCoordinates;
+varying vec2 fragmentTextureCoordinates;
+varying float zDistance;
+uniform mat4 worldMatrix;
+uniform mat4 viewMatrix;
+uniform mat4 projectionMatrix;
+
+void main()
+{
+
+    zDistance = -(viewMatrix * worldMatrix * vec4(vertexCoordinates, 1.0)).z;
+    fragmentTextureCoordinates = textureCoordinates;
+    gl_Position =   projectionMatrix * viewMatrix * worldMatrix
+                  * vec4(vertexCoordinates, 1.0);
+}
+`;

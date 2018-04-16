@@ -7,19 +7,47 @@ LICENSE GOES HERE
 <html>
     <head>
         <meta charset="utf-8">
+        <title>ＶＡＰＯＲＲＵＮ</title>
+        
+     	<!-- CSS files are loaded here: -->
         <link rel="stylesheet" type="text/css" href="css/dev_theme.css">
-        <script src="lib/glMatrix/gl-matrix-min.js"></script>
+        
+		<!-- JavaScript libraries are loaded here: -->
+        <script src="lib/glMatrix/gl-matrix.js"></script>
+        
+		<!-- JavaScript source code files are loaded here: -->
+        <script src="src/init.js"></script>
+        <script src="src/camera.js"></script>
+        <script src="src/material.js"></script>
+        <script src="src/model.js"></script>
+        <script src="src/vehicle.js"></script>
+        <script src="src/input.js"></script>
+        <script src="src/map.js"></script>
+        <script src="src/draw.js"></script>
+        <script src="src/run.js"></script>
+        <script src="src/util.js"></script>
+        
+		<!-- GLSL shaders are loaded here: -->
         <script src="src/glsl/vertex_shader.glsl.js"></script>
         <script src="src/glsl/fragment_shader.glsl.js"></script>
-        <script src="src/draw.js"></script>
-        <title>ＶＡＰＯＲＲＵＮ</title>
+        
+		<!-- 3D models are loaded here: -->
+		<script src="models/trueno_model.json.js"></script>
+        
     </head>
-    <body onload="initWebGL();clearGSurf();demo();">
-        <div id="content">
-            <canvas id="gsurf" width="800" height="600">
-            </canvas>
+    <body onload="vr.init();">
+        
+    	<div id="content">
+            <canvas id="webGLCanvas"></canvas>
         </div>
-        <img class="texture" id="road_texture" src="textures/road_texture.png">
-        <img class="texture" id="grass_texture" src="textures/grass_texture.png">
+        
+     	<!-- Textures are loaded here: -->
+        <img class="texture af" id="roadTexture" src="textures/road_texture.png">
+        <img class="texture" id="grassTexture" src="textures/grass_texture.png">
+        <img class="texture" id="redTexture" src="textures/red_texture.png">
+        <img class="texture" id="xorTexture" src="textures/xor_texture.png">
+        <img class="texture" id="truenoTexture" src="textures/trueno_texture.png">
+        <img class="texture cm" id="skyboxTexture" src="textures/grass_texture.png">
+        
 	</body>
 </html>
