@@ -2,6 +2,6 @@
 
 # VaporRun
 
-An OutRun-like WebGL driving game in the early stages of development.
+An OutRun-like WebGL driving game with procedurally generated roads and city environments in the early stages of development.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
