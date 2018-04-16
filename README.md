@@ -1,4 +1,4 @@
-<img align="right" width="100%" src="https://raw.githubusercontent.com/O-Boll/vaporrun/master/media/screenshot_vaporrun.jpg">
+<img align="right" width="100%" src="https://raw.githubusercontent.com/O-Boll/vaporrun/master/media/vaporrun_screenshot.jpg">
 
 # VaporRun
 
