@@ -23,10 +23,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 
-/**
-* Wrapper around a glsl shader program.
-*/
-vr.Program = function()
-{
+vr.Texture = functio() {
     /* ... */
 }
